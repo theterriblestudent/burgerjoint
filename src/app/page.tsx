@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Hero from "@components/hero";
+import MenuCategories from "@components/menucategories";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center" >
-      <h1>This is the main page</h1>
+    <main className="container-grid relative top-[89px] md:top-[112px]">
+      <Hero />
+      <MenuCategories />
     </main>
   );
 }

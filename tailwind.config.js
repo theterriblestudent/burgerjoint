@@ -9,7 +9,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        asap: ['var(--font-asap)', "sans-serif"]
+      },
+      colors: {
+        'pink': '#E54F46',
+        'white': "#F6F6F6",
+        'black': '#161616'
+      },
+    },
   },
   plugins: [],
 }

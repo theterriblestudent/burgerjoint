@@ -1,3 +1,117 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .container-grid {
+
+    --padding-inline: 5%;
+    --content-max-width: 1300px;
+
+    display: grid;
+
+    grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [content-start] min(100% - (2 * var(--padding-inline)), var(--content-max-width)) [content-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+    }
+
+    .container-grid > :not(.full-width, .breakout) {
+        grid-column: content;
+    }
+    
+    .container-grid > .full-width {
+        grid-column: full-width;
+    }
+
+    .overlay::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000000c9;
+    }
+
+    input[type="radio"] {
+        appearance: none;
+        background: transparent;
+        margin: 0;
+
+        color: #E54F46;
+        width: 20px;
+        height: 20px;
+        border: 0.13em solid #E54F46;
+        border-radius: 50%;
+
+        display: grid;
+        place-content: center;
+    }
+
+    input[type="radio"]::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em #E54F46;
+    }
+
+    input[type="radio"]:checked::before {
+    transform: scale(1);
+    }
+
+    .menu-category-card {
+        @apply rounded-sm;
+        @apply h-[240px];
+        @apply md:h-[300px];
+    }
+
+    .menu-category-card:first-child {
+        @apply col-span-2;
+        @apply md:col-span-1;
+        @apply md:row-span-2;
+        height: 100%;
+    }
+
+    .menu-category-card:first-child img {
+        height: 80%;
+    }
+
+    .menu-category-card:first-child .name {
+        height: 20%;
+    }
+
+    .menu-category-card img {
+        @apply rounded-t-sm;
+        @apply w-full;
+        @apply object-center;
+        @apply object-cover;
+        @apply h-[80%];
+        @apply md:h-[70%];
+    
+    }
+
+    .menu-category-card .name {
+        @apply flex;
+        @apply flex-col;
+        @apply justify-center;
+        @apply items-center;
+        @apply h-[20%];
+        @apply md:h-[30%];
+
+        background-color: #f1f1f194;
+
+    }
+    
+    .menu-category-card .name h2 {
+        @apply font-asap;
+        @apply text-black;
+        @apply md:text-2xl;
+        @apply text-lg;
+        @apply uppercase;
+        @apply font-semibold;
+    }
+
+   
+}
+
