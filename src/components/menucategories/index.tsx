@@ -2,9 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import Category from './components/category';
 
-const MenuCategories = () => {
+const MenuCategories = () : JSX.Element => {
   return (
-    <section className='full-width container-grid'>
+    <section className="full-width container-grid bg-[url('/SVG/doodle-bg-sm.svg')] md:bg-[url('/SVG/doodle-bg-lg.svg')] bg-repeat pt-12 pb-12 sm:pt-20 sm:pb-20">
       <h1 className="font-asap text-3xl sm:text-5xl md:text-[52px] text-black font-bold uppercase mb-4 sm:mb-9">Browse Menu Categories</h1>
       <div className="grid grid-cols-2 md:grid-cols-[3fr_2fr_2fr] gap-4 sm:gap-5 lg:gap-10">
         <Category image="/images/specials.jpg"  title="Todays Specials"/>

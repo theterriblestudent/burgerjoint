@@ -8,7 +8,7 @@ const Hero = () : JSX.Element => {
              className={`full-width bg-[url('/images/hero.png')] h-[65vh]
                          bg-center bg-cover overlay container-grid relative bg-black
                          items-center justify-items-center sm:justify-items-start
-                         mb-12 sm:mb-20`}>
+                        `}>
       <div className="relative z-10 flex items-start  flex-col gap-4 sm:gap-7 w-min">
         <h1 className="font-asap relative left-[16px] sm:left-0 uppercase block text-3xl md:text-5xl font-bold text-white">Find Restaurants</h1>
         <div className="relative sm:left-[-20px] p-4 sm:p-5 bg-[#454545d8] rounded-md flex flex-col items-start gap-4 sm:gap-5">

@@ -98,8 +98,8 @@
         @apply items-center;
         @apply h-[20%];
         @apply md:h-[30%];
-
-        background-color: #f1f1f194;
+        @apply bg-[#f1f1f1cc];
+        @apply md:bg-[#f1f1f169];
 
     }
     
@@ -112,6 +112,36 @@
         @apply font-semibold;
     }
 
-   
+
+    .image-overlay {
+        @apply absolute;
+        @apply w-full;
+        @apply h-20;
+        @apply bg-red-50;
+        @apply bottom-0;
+        @apply left-0;
+        @apply right-0;
+
+        background: #2C2E2D;
+        background: linear-gradient(0deg, #2C2E2D 0%, #2C2E2D7e 50%, #2C2E2D00 100%);
+    }
+
+    .btn {
+        @apply rounded-full;
+        @apply pl-7; 
+        @apply pr-7;
+        @apply pt-2;
+        @apply pb-2;
+        
+        @apply font-asap;
+        @apply text-lg;
+        @apply uppercase;
+        @apply no-underline;
+    }
+
+    .btn.primary {
+        @apply bg-[#E54F46];
+        @apply text-[white];
+    }
 }
 
