@@ -14,12 +14,12 @@ const Hero = () : JSX.Element => {
         <div className="relative sm:left-[-20px] p-4 sm:p-5 bg-[#454545d8] rounded-md flex flex-col items-start gap-4 sm:gap-5">
           <div className='flex items-center gap-6 sm:gap-8'>
             <span className='flex items-center gap-2'>
-              <input value="" checked className='radio' type="radio" name="order-type" id="delivery"/>
-              <label className='font-asap sm:text-lg md:text-xl text-white' for="delivery">Delivery</label>
+              <input value="" className='radio' type="radio" name="order-type" id="delivery"/>
+              <label className='font-asap sm:text-lg md:text-xl text-white' htmlFor="delivery">Delivery</label>
             </span>
             <span className='flex items-center gap-2'>
               <input className="radio" type="radio" name="order-type" id="pick-up" />
-              <label className='font-asap sm:text-lg md:text-xl text-white' for="pick-up">Pick-Up</label>
+              <label className='font-asap sm:text-lg md:text-xl text-white' htmlFor="pick-up">Pick-Up</label>
             </span>
           </div>
           <div className='flex items-stretch'>
