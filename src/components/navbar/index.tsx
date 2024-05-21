@@ -16,7 +16,7 @@ const Navbar = () : JSX.Element =>  {
           </div>
         </div>
         <div className='flex items-center gap-6'>
-          <h2 className='text-black font-asap text-lg md:text-xl font-semibold' >Login</h2>
+          <a href="/auth/login" className='text-black font-asap text-lg md:text-xl font-semibold' >Login</a>
           <div className="hidden md:block w-px h-10 bg-stone-500"></div>
           <div className='flex items-center gap-4 bg-pink pt-1 pb-1 pl-3 pr-3 rounded-md'>
             <FaShoppingCart className='text-white' />
