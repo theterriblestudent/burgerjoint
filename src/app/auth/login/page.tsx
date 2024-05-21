@@ -20,7 +20,7 @@ const Login = (): JSX.Element => {
             <button className="p-2 rounded-md text-white font-semibold bg-pink">Login</button>
 
             <a className="font-asap text-base sm:text-lg text-[grey] self-center" href="/auth/account-recovery">Forgot password?</a>
-            <h2 className="font-asap text-base sm:text-lg text-[grey] self-center">Don&apost have an account? <a href="/auth/signup" className="text-pink"> Sign Up</a></h2>
+            <h2 className="font-asap text-base sm:text-lg text-[grey] self-center">Don&apos;t have an account? <a href="/auth/signup" className="text-pink"> Sign Up</a></h2>
         </form>
     </section>
   )
